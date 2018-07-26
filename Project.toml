@@ -1,4 +1,4 @@
 name = "MolecularTopologies"
 uuid = "a207b480-8fe6-11e8-0ddf-8f5d92e52f2c"
 authors = ["Tom Lee <contact@tomlee.com.au>"]
-version = "0.1.0"
+version = "1.0.0"
