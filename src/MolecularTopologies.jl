@@ -2,6 +2,7 @@ __precompile__()
 module MolecularTopologies
 
 export AbstractToplogy, GroTopology
+export gro_topology
 
 abstract type AbstractToplogy end
 
@@ -11,6 +12,8 @@ struct GroTopology <: AbstractToplogy
     residue_indices::Vector{Int}
     residue_names::Vector{String}
 end
+
+gro_topology(x) = GroTopology(x)
 
 Base.length(topology::AbstractToplogy) = length(topology.atom_names)
 

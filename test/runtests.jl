@@ -3,15 +3,15 @@ using MolecularTopologies
 
 using Test
 
-topology = open(x->GroTopology(x), "test.gro")
+topology = open(gro_topology, "test.gro")
 
-@test topology.atom_names[60] == "C"
-@test topology.residue_indices[60] == 1
-@test topology.residue_names[60] == "GRM"
+@test topology.atom_names[60] == "C2C"
+@test topology.residue_indices[60] == 2
+@test topology.residue_names[60] == "DLPC"
 
-@test topology.atom_names[3003] == "H44"
-@test topology.residue_indices[3003] == 6
-@test topology.residue_names[3003] == "CBP"
+@test topology.atom_names[71050] == "OW"
+@test topology.residue_indices[71050] == 17028
+@test topology.residue_names[71050] == "SOL"
 
 len = length(topology)
-@test len == 62325 - 3
+@test len == 71400
