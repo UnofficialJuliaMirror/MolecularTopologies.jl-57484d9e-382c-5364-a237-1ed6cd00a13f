@@ -1,5 +1,8 @@
 # MolecularTopologies.jl
 
+[![Build Status](https://travis-ci.org/tom--lee/MolecularTopologies.jl.svg?branch=master)](https://travis-ci.org/tom--lee/MolecularTopologies.jl)
+[![Coverage Status](https://coveralls.io/repos/tom--lee/MolecularTopologies.jl/badge.svg?branch=master)](https://coveralls.io/r/tom--lee/MolecularTopologies.jl?branch=master)
+
 A Julia package for representing system topologies for molecular simulations.
 
 The package currently only supporting reading atom names, residues names, and
